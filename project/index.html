@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToLet Mate - Find Your Perfect Stay</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="hero-text">
+            <h2>SIGNUP TO ACCESS YOUR PERFECT HOME FINDER</h2>
+            <p></p>
+        </div>
+        <div class="signup-box">
+            <h1>ToLet Mate</h1>
+            <p class="tagline">Find Your Perfect Stay</p>
+            <form id="signupForm" onsubmit="return validateForm(event)">
+                <div class="input-group">
+                    <input type="text" id="userInput" placeholder="Mobile Number or Email" required>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="fullName" placeholder="Full Name" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="password" placeholder="Set Password" required>
+                    <span id="togglePassword" class="toggle-password">👁️</span>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+                </div>
+                <button type="submit" class="signup-btn">Create Account</button>
+            </form>
+            <p class="login-link">Already have an account? <a href="#">Login here</a></p>
+        </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+</body>
+</html>
